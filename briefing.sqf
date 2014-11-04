@@ -13,6 +13,39 @@ player createDiarySubject ["credits", "Credits"];
 
 player createDiaryRecord ["changelog",
 [
+"GoT",
+"
+<br/> [Added] Carbon and Holland Vehicle skins
+<br/> [Added] Denim and Psychadelic Vehicle skins
+<br/> [Added] Rusty and Rainbow Vehicle skins
+<br/> [Added] Vehicle protection for independent groups
+<br/> [Added] AI has 60% change on flashlight instead of NVG
+<br/> [Added] Merged in changes for v1.0b (from altis branch)
+<br/> [Changed] Reduced amount of concurrent missions to 4
+<br/> [Changed] Reduced mission timers and wait time
+<br/> [Changed] Reduced territory system timers and rewards
+<br/> [Changed] Time boosted 2x during day, 4x during night
+<br/> [Removed] Static guns from gunstore
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
+"v1.0b",
+"
+<br/> [Added] Revamped Spawn selection screen
+<br/> [Added] 250m altitude limit for territory capture
+<br/> [Added] setting for spawn beacon altitude
+<br/> [Changed] increased plane damage by 50%
+<br/> [Changed] home key also toggles player marker names too
+<br/> [Changed] slay option for admin available again
+<br/> [Fixed] 3digit score clipping in scoreboard
+<br/> [Fixed] More random minor fixes
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
 "v1.0",
 "
 <br/> [Added] Custom scoreboard
