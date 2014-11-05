@@ -572,7 +572,7 @@ allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsA
 //Text name, classname, buy cost, spawn type, sell price (selling not implemented) or spawning color
 landArray = compileFinal str
 [
-	["Kart", "C_Kart_01_F", 500, "vehicle"],
+	["[DLC] Kart", "C_Kart_01_F", 500, "vehicle"],
 
 	["Quadbike (Civilian)", "C_Quadbike_01_F", 600, "vehicle"],
 	["Quadbike (NATO)", "B_Quadbike_01_F", 650, "vehicle"],
@@ -659,21 +659,24 @@ tanksArray = compileFinal str
 
 helicoptersArray = compileFinal str
 [
-	["Mi-290 Taru [DLC]", "O_Heli_Transport_04_F", 5000, "vehicle"], //Mi-290 Taru various types and purposes
-	["Mi-290 Taru (Ammo) [DLC]", "O_Heli_Transport_04_ammo_F", 6500, "vehicle"],
-	["Mi-290 Taru (Bench) [DLC]", "O_Heli_Transport_04_bench_F", 5500, "vehicle"],
-	["Mi-290 Taru (Cargo) [DLC]", "O_Heli_Transport_04_box_F", 5500, "vehicle"],
-	["Mi-290 Taru (Transport) [DLC]", "O_Heli_Transport_04_covered_F", 5500, "vehicle"],
-	["Mi-290 Taru (Medical) [DLC]", "O_Heli_Transport_04_medevac_F", 6500, "vehicle"],
-	["Mi-290 Taru (Repair) [DLC]", "O_Heli_Transport_04_repair_F", 6500, "vehicle"],
+	["[DLC] Mi-290 Taru", "O_Heli_Transport_04_F", 21000, "vehicle"], //Mi-290 Taru various types and purpose
+	["[DLC] Mi-290 Taru (Bench)", "O_Heli_Transport_04_bench_F", 22000, "vehicle"],
+	["[DLC] Mi-290 Taru (Transport)", "O_Heli_Transport_04_box_F", 23000, "vehicle"],
+	["[DLC] Mi-290 Taru (Covered)", "O_Heli_Transport_04_covered_F", 24000, "vehicle"],
+	["[DLC] Mi-290 Taru (Fuel)", "O_Heli_Transport_04_fuel_F", 25000, "vehicle"],
+	["[DLC] Mi-290 Taru (Medical)", "O_Heli_Transport_04_medevac_F", 26000, "vehicle"],
+	["[DLC] Mi-290 Taru (Repair)", "O_Heli_Transport_04_repair_F", 28500, "vehicle"],
+	["[DLC] Mi-290 Taru (Ammo)", "O_Heli_Transport_04_ammo_F", 43500, "vehicle"]
 	
-	["CH-67 Huron (black) [DLC]", "B_Heli_Transport_03_unarmed_F", 6000, "vehicle"], //Huron CH-67 Huron
-	["CH-67 Huron Armed [DLC]", "B_Heli_Transport_03_F", 70000, "vehicle"], 
+	["[DLC] CH-67 Huron (black)", "B_Heli_Transport_03_unarmed_F", 20000, "vehicle"], //Huron CH-67 Huron
+	["[DLC] CH-67 Huron Armed", "B_Heli_Transport_03_F", 70000, "vehicle"], 
 	
-	["M-900 Helicopter [DLC]", "C_Heli_Light_01_civil_F", 5500, "vehicle"], //Civ M-900 helicopter
+	["[DLC] M-900 Helicopter", "C_Heli_Light_01_civil_F", 4000, "vehicle"], //Civ M-900 helicopter
 
-	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
+	["[DLC] PO-30 Orca (Armed) (Black/White)", "O_Heli_Light_02_v2_F", 35000, "vehicle"] // Ka-60
+
 	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 7500, "vehicle"], // Ka-60
+	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 7500, "vehicle"], // AW159
 	["CH-49 Mohawk", "I_Heli_Transport_02_F", 10000, "vehicle"], // AW101
 
