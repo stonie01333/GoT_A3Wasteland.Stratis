@@ -15,12 +15,8 @@ player createDiaryRecord ["changelog",
 [
 "GoT",
 "
-<br/> [Added] Carbon and Holland Vehicle skins
-<br/> [Added] Denim and Psychadelic Vehicle skins
-<br/> [Added] Rusty and Rainbow Vehicle skins
-<br/> [Added] Vehicle protection for independent groups
+<br/> [Added] Holland Vehicle skin
 <br/> [Added] AI has 60% change on flashlight instead of NVG
-<br/> [Added] Merged in changes for v1.0b (from altis branch)
 <br/> [Changed] Reduced amount of concurrent missions to 4
 <br/> [Changed] Reduced mission timers and wait time
 <br/> [Changed] Reduced territory system timers and rewards
@@ -33,14 +29,22 @@ player createDiaryRecord ["changelog",
 [
 "v1.0b",
 "
-<br/> [Added] Revamped Spawn selection screen
+<br/> [Added] Helicopters DLC content
+<br/> [Added] Revamped respawn menu
 <br/> [Added] 250m altitude limit for territory capture
-<br/> [Added] setting for spawn beacon altitude
-<br/> [Changed] increased plane damage by 50%
-<br/> [Changed] home key also toggles player marker names too
-<br/> [Changed] slay option for admin available again
-<br/> [Fixed] 3digit score clipping in scoreboard
-<br/> [Fixed] More random minor fixes
+<br/> [Added] HALO insertion on spawn beacons
+<br/> [Added] New vehicle store textures
+<br/> [Changed] Increased damage done to planes by 50%
+<br/> [Changed] Plane engines shutdown when above 90% damage
+<br/> [Changed] Player names can also be toggled with Home key
+<br/> [Changed] Increased ATGM UAV price
+<br/> [Changed] Increased prices from thermal scopes again
+<br/> [Changed] Minor edits to spawn loadouts
+<br/> [Fixed] Saved UAVs not being connectable
+<br/> [Fixed] Indies unable to get in UGVs
+<br/> [Fixed] Blinking fog
+<br/> [Fixed] Clipped numbers on scoreboard
+<br/> [Fixed] Minor other optimizations and fixes
 "
 ]];
 
