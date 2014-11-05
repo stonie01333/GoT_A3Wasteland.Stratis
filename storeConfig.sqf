@@ -659,14 +659,18 @@ tanksArray = compileFinal str
 
 helicoptersArray = compileFinal str
 [
-	["Mi-290 Taru", "O_Heli_Transport_04_F", 5500, "vehicle"], //Mi-290 Taru
-	["Mi-290 Taru (Ammo)", "O_Heli_Transport_04_ammo_F", 5500, "vehicle"],
-	["Mi-290 Taru (Bench)", "O_Heli_Transport_04_bench_F", 5500, "vehicle"],
-	["Mi-290 Taru (Cargo)", "O_Heli_Transport_04_box_F", 5500, "vehicle"],
-	["Mi-290 Taru (Transport)", "O_Heli_Transport_04_covered_F", 5500, "vehicle"],
-	["Mi-290 Taru (Medical)", "O_Heli_Transport_04_medevac_F", 5500, "vehicle"],
-	["Mi-290 Taru (Repair)", "O_Heli_Transport_04_repair_F", 5500, "vehicle"],
-	["CH-67 Huron", "B_Heli_Transport_03_F", 6000, "vehicle"], //Huron CH-67 Huron
+	["Mi-290 Taru [DLC]", "O_Heli_Transport_04_F", 5000, "vehicle"], //Mi-290 Taru various types and purposes
+	["Mi-290 Taru (Ammo) [DLC]", "O_Heli_Transport_04_ammo_F", 6500, "vehicle"],
+	["Mi-290 Taru (Bench) [DLC]", "O_Heli_Transport_04_bench_F", 5500, "vehicle"],
+	["Mi-290 Taru (Cargo) [DLC]", "O_Heli_Transport_04_box_F", 5500, "vehicle"],
+	["Mi-290 Taru (Transport) [DLC]", "O_Heli_Transport_04_covered_F", 5500, "vehicle"],
+	["Mi-290 Taru (Medical) [DLC]", "O_Heli_Transport_04_medevac_F", 6500, "vehicle"],
+	["Mi-290 Taru (Repair) [DLC]", "O_Heli_Transport_04_repair_F", 6500, "vehicle"],
+	
+	["CH-67 Huron (black) [DLC]", "B_Heli_Transport_03_unarmed_F", 6000, "vehicle"], //Huron CH-67 Huron
+	["CH-67 Huron Armed [DLC]", "B_Heli_Transport_03_F", 70000, "vehicle"], 
+	
+	["M-900 Helicopter [DLC]", "C_Heli_Light_01_civil_F", 5500, "vehicle"], //Civ M-900 helicopter
 
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 7500, "vehicle"], // Ka-60
