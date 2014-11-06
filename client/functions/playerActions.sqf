@@ -29,8 +29,13 @@
 ];
 
 
-// Hehehe...
+// Hehehe... (karts)
 if !(288520 in getDLCs 1) then
 {
 	[player, ["<t color='#00FFFF'>Get in as Driver</t>", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "cursorTarget isKindOf 'Kart_01_Base_F' && player distance cursorTarget < 3.4 && isNull driver cursorTarget"]] call fn_addManagedAction;
+};
+// Morehehe... (heli)
+if !(304380 in getDLCs 1) then
+{
+	[player, ["<t color='#00FFFF'>Get in as Pilot</t>", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "((cursorTarget isKindOf 'B_Heli_Transport_03_base_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 3.4 && isNull driver cursorTarget"]] call fn_addManagedAction;
 };
