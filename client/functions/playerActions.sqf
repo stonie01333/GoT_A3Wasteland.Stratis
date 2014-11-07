@@ -35,7 +35,7 @@ if !(288520 in getDLCs 1) then
 	[player, ["<t color='#00FFFF'>Get in as Driver</t>", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "cursorTarget isKindOf 'Kart_01_Base_F' && player distance cursorTarget < 3.4 && isNull driver cursorTarget"]] call fn_addManagedAction;
 };
 // Morehehe... (heli)
-if !(304380 in getDLCs 1) or !(getPlayerUID player <> "76561197960482553") then  // Temporarily added my uid so I can debug the function as a DLC owner
+if !(304380 in getDLCs 1) then  // Temporarily added my uid so I can debug the function as a DLC owner
 {
-	[player, ["<t color='#00FFFF'>Force 2 pilotseat</t>", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "((cursorTarget isKindOf 'B_Heli_Transport_03_base_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 4.5 && isNull driver cursorTarget"]] call fn_addManagedAction;
+	[player, ["<t color='#00FFFF'><img image='client\icons\driver.paa'/> Get in as Pilot anyway!</t>", "client\actions\moveInPilot.sqf", [], 6, true, true, "", "((cursorTarget isKindOf 'B_Heli_Transport_03_base_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 5 && isNull driver cursorTarget"]] call fn_addManagedAction;
 };
