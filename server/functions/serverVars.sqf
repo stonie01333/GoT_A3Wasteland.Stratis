@@ -132,7 +132,7 @@ staticWeaponsList =
 //Object List - Random Helis.
 staticHeliList =
 [
-	"B_Heli_Light_01_F",
+	"C_Heli_Light_01_civil_F",
 	"B_Heli_Light_01_F",
 	"O_Heli_Light_02_unarmed_F",
 	"I_Heli_light_03_unarmed_F"
