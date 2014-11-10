@@ -24,6 +24,7 @@ respawnDialogActive = false;
 groupManagmentActive = false;
 pvar_PlayerTeamKiller = objNull;
 doCancelAction = false;
+firstspawn = 1;
 
 //Initialization Variables
 playerCompiledScripts = false;
