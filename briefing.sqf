@@ -16,7 +16,7 @@ player createDiaryRecord ["changelog",
 "GoT",
 "
 <br/> [Added] Holland Vehicle skin
-<br/> [Added] AI has 60% change on flashlight instead of NVG
+<br/> [Added] AI has 60% chance on flashlight instead of NVG
 <br/> [Added] Multiplying money-reward for every 40 mins connected
 <br/> [Added] DLC-heli Pilot/Gunner option for non-DLC players
 <br/> [Added] R.I.P. Marker on corpse location after respawn
