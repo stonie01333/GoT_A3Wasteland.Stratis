@@ -36,7 +36,7 @@ if (random 1 < 0.6) then    							// 60% chance soldier has no NVG but flashlig
 	_soldier addPrimaryWeaponItem "acc_flashlight";
 	_soldier unassignItem "NVGoggles";					// unassign and remove NVG if they have them
 	_soldier removeItem "NVGoggles";
-	_soldier enablegunlights "AUTO";					//set to "forceOn" to force use of lights (during day too)
+	_soldier enablegunlights "forceOn";					//set to "forceOn" to force use of lights (during day too default = AUTO)
 };
 	
 

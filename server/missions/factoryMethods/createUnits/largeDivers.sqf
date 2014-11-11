@@ -86,7 +86,7 @@ _leader = leader _group;
 		_x addPrimaryWeaponItem "acc_flashlight";
 		_x unassignItem "NVGoggles";					// unassign and remove NVG if they have them
 		_x removeItem "NVGoggles";
-		_x enablegunlights "AUTO";					//set to "forceOn" to force use of lights (during day too)
+		_x enablegunlights "forceOn";					//set to "forceOn" to force use of lights (during day too default = AUTO)
 	};
 	_x spawn refillPrimaryAmmo;
 	_x call setMissionSkill;

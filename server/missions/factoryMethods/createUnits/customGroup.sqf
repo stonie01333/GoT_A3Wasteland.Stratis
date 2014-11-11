@@ -86,7 +86,7 @@ for "_i" from 1 to _nbUnits do
 		_unit addPrimaryWeaponItem "acc_flashlight";
 		_unit unassignItem "NVGoggles";					// unassign and remove NVG if they have them
 		_unit removeItem "NVGoggles";
-		_unit enablegunlights "AUTO";					//set to "forceOn" to force use of lights (during day too)
+		_unit enablegunlights "forceOn";					//set to "forceOn" to force use of lights (during day too default = AUTO)
 	};
 	
 	_unit addRating 1e11;
