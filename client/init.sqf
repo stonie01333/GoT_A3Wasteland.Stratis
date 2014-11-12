@@ -64,6 +64,10 @@ player call playerSetupStart;
 _baseMoney = ["A3W_startingMoney", 100] call getPublicVar;
 player setVariable ["cmoney", _baseMoney, true];
 
+// Set initial bounty
+_baseBounty = ["A3W_startingBounty", 150] call getPublicVar;
+player setVariable ["cbounty", _baseBounty, true];
+
 // Player saving - Load from iniDB
 if (["A3W_playerSaving"] call isConfigOn) then
 {

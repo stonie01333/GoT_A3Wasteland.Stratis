@@ -20,6 +20,9 @@ _corpse = _this select 1;
 _corpse setVariable ["newRespawnedUnit", _player, true];
 _player setVariable ["playerSpawning", true, true];
 
+_baseBounty = ["A3W_startingBounty", 150] call getPublicVar;
+_player setVariable ["cbounty", _baseBounty, true];
+
 _group = _player getVariable ["currentGroupRestore", grpNull];
 
 if (!isNull _group && {group _player != _group}) then
