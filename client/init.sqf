@@ -23,6 +23,8 @@ mutexScriptInProgress = false;
 respawnDialogActive = false;
 groupManagmentActive = false;
 pvar_PlayerTeamKiller = objNull;
+pvar_PlayerTeamKilled = objNull;
+pvar_PlayerTKPrevBounty = 0;
 doCancelAction = false;
 firstspawn = 1;
 

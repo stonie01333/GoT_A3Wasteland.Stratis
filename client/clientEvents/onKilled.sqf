@@ -128,6 +128,8 @@ if (_player == player && (playerSide == side group _killer) && (player != _kille
 		if (_killer isKindOf "CAManBase") then
 		{
 			pvar_PlayerTeamKiller = _killer;
+			pvar_PlayerTeamKilled = _player;
+			pvar_PlayerTKPrevBounty = _player getVariable ["cbounty", 0];
 		}
 		else
 		{

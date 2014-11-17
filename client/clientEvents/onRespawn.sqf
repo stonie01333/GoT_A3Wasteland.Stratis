@@ -71,3 +71,10 @@ if (isPlayer pvar_PlayerTeamKiller) then
 
 	[] execVM "client\functions\createTeamKillDialog.sqf";
 };
+
+if (isPlayer pvar_PlayerTeamKilled) then
+{
+	_player setVariable ["cbounty", pvar_PlayerTKPrevBounty, true];
+	pvar_PlayerTeamKilled = objNull;
+	pvar_PlayerTKPrevBounty = 0;
+};
