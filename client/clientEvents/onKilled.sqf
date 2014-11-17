@@ -148,7 +148,7 @@ if (_player == player && (playerSide == side group _killer) && (player != _kille
 else 
 {
 	// not in the same team or group? handle bounty!
-	if !(isNull _killer) 
+	if !(isNull _killer) then
 	{
 		_kbounty = _killer getVariable ["cbounty", 0];
 		_pbounty = _player getVariable ["cbounty", 0];
