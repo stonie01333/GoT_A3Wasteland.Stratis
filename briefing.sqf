@@ -20,10 +20,14 @@ player createDiaryRecord ["changelog",
 <br/> [Added] Multiplying money-reward for every 40 mins connected
 <br/> [Added] DLC-heli Pilot/Gunner option for non-DLC players
 <br/> [Added] R.I.P. Marker on corpse location after respawn
+<br/> [Added] Bounty system - increase bounty by killing players
+<br/> [Changed] Bountysystem saves over restarts
+<br/> [Changed] Bountysystem does not trigger on teamkills
 <br/> [Changed] Reduced amount of concurrent missions to 4
 <br/> [Changed] Reduced mission timers and wait time
 <br/> [Changed] Reduced territory system timers and rewards
 <br/> [Changed] Time boosted 2x during day, 4x during night
+<br/> [Changed] Forced flashlights on AI to be ON
 <br/> [Removed] Static guns from gunstore
 "
 ]];
@@ -50,6 +54,7 @@ player createDiaryRecord ["changelog",
 <br/> [Fixed] Blinking fog
 <br/> [Fixed] Clipped numbers on scoreboard
 <br/> [Fixed] Minor other optimizations and fixes
+<br/> [Fixed] Issue with jumpsystem causing spideyjumps
 "
 ]];
 
