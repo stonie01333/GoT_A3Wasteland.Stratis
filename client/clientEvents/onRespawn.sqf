@@ -20,6 +20,9 @@ _corpse = _this select 1;
 _corpse setVariable ["newRespawnedUnit", _player, true];
 _player setVariable ["playerSpawning", true, true];
 
+_baseBounty = ["A3W_startingBounty", 150] call getPublicVar;
+_player setVariable ["cbounty", _baseBounty, true];
+
 _group = _player getVariable ["currentGroupRestore", grpNull];
 
 if (!isNull _group && {group _player != _group}) then
@@ -67,4 +70,11 @@ if (isPlayer pvar_PlayerTeamKiller) then
 	pvar_PlayerTeamKiller = objNull;
 
 	[] execVM "client\functions\createTeamKillDialog.sqf";
+};
+
+if (isPlayer pvar_PlayerTeamKilled) then
+{
+	_player setVariable ["cbounty", pvar_PlayerTKPrevBounty, true];
+	pvar_PlayerTeamKilled = objNull;
+	pvar_PlayerTKPrevBounty = 0;
 };

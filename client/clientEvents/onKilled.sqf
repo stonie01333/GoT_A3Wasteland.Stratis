@@ -128,6 +128,8 @@ if (_player == player && (playerSide == side group _killer) && (player != _kille
 		if (_killer isKindOf "CAManBase") then
 		{
 			pvar_PlayerTeamKiller = _killer;
+			pvar_PlayerTeamKilled = _player;
+			pvar_PlayerTKPrevBounty = _player getVariable ["cbounty", 0];
 		}
 		else
 		{
@@ -141,5 +143,18 @@ if (_player == player && (playerSide == side group _killer) && (player != _kille
 			pvar_removeNegativeScore = _killer;
 			publicVariableServer "pvar_removeNegativeScore";
 		};
+	};
+} 
+else 
+{
+	// not in the same team or group? handle bounty!
+	if !(isNull _killer) 
+	{
+		_kbounty = _killer getVariable ["cbounty", 0];
+		_pbounty = _player getVariable ["cbounty", 0];
+		_bounty = _kbounty + _cbounty;
+		_killer setVariable ["cbounty", _bounty, true];
+		_baseBounty = ["A3W_startingBounty", 150] call getPublicVar;
+		_player setVariable ["cbounty", _baseBounty, true];
 	};
 };

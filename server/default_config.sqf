@@ -29,6 +29,7 @@ A3W_vehiclePurchaseCooldown = 30;  // Number of seconds to wait before allowing 
 A3W_startingMoney = 90;           // Amount of money that players start with
 A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (0 = no, 1 = yes) - this also removes energy drinks from the mission
 A3W_bleedingTime = 60;             // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds)
+A3W_startingBounty = 150;		   // Bounty players start with
 
 // Persistence settings
 A3W_playerSaving = 1;              // Save player data like position, health, inventory, etc. (0 = no, 1 = yes)
