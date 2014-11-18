@@ -31,6 +31,7 @@ removeHeadgear player;
 		case "Hunger": { hungerLevel = _value };
 		case "Thirst": { thirstLevel = _value };
 		case "Money": { player setVariable ["cmoney", _value, true] };
+		case "Bounty": { player setVariable ["cbounty", _value, true] };
 		case "Position": { if (count _value == 3) then { player setPosATL _value } };
 		case "Direction": { player setDir _value };
 		case "Uniform":

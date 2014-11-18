@@ -31,6 +31,12 @@ spawnActionHandle = (_this select 1) spawn
 		// Deal with money here
 		_baseMoney = ["A3W_startingMoney", 100] call getPublicVar;
 		player setVariable ["cmoney", _baseMoney, true];
+		// Check if bounty is set correctly, if not, re-set to base-bounty
+		_baseBounty = ["A3W_startingBounty", 150] call getPublicVar;
+		if (player getVariable ["cbounty", 0] < _baseBounty) then
+		{
+			player setVariable ["cbounty", _baseBounty, true];
+		};
 
 		[MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add;
 		[MF_ITEMS_WATER, 1] call mf_inventory_add;
