@@ -152,7 +152,7 @@ else
 	{
 		_kbounty = _killer getVariable ["cbounty", 0];
 		_pbounty = _player getVariable ["cbounty", 0];
-		_bounty = _kbounty + _cbounty;
+		_bounty = _kbounty + _pbounty;
 		_killer setVariable ["cbounty", _bounty, true];
 		_baseBounty = ["A3W_startingBounty", 150] call getPublicVar;
 		_player setVariable ["cbounty", _baseBounty, true];
