@@ -144,7 +144,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			side="WEST";
@@ -1831,6 +1831,25 @@ class Mission
 					skill=0.60000002;
 					text="VehStore3";
 					init="[this, 'VehStore', 3] spawn A3W_fnc_setupStoreNPC";
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2166.9275,9.1938703,1886.3179};
+					id=1;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="server";
+					init="null=[] execVM ""addons\cos\cosInit.sqf"";";
 				};
 			};
 		};

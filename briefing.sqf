@@ -21,6 +21,7 @@ player createDiaryRecord ["changelog",
 <br/> [Added] DLC-heli Pilot/Gunner option for non-DLC players
 <br/> [Added] R.I.P. Marker on corpse location after respawn
 <br/> [Added] Bounty system - increase bounty by killing players
+<br/> [Added] Roaming Armed civillians in towns
 <br/> [Changed] Bountysystem saves over restarts
 <br/> [Changed] Bountysystem does not trigger on teamkills
 <br/> [Changed] Reduced amount of concurrent missions to 4
@@ -291,6 +292,7 @@ player createDiaryRecord ["credits",
 <br/>	* spunFIN (BIS forums)
 <br/>	* Tonic (BIS forums)
 <br/>	* wiking.at (A3W forums)
+<br/>   * Banbgabob (Armaholic)
 <br/>
 <br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
 "
