@@ -32,7 +32,10 @@ private ["_sizeX","_sizeY","_name","_pos","_mSize","_rad","_civilians","_vehicle
 breakPatrol_FNC=compile preprocessFileLineNumbers "addons\cos\patrolFnc.sqf";
 unitScript_FNC=compile preprocessFileLineNumbers "addons\cos\addScript_Unit.sqf";
 
-COScomplete=false;publicvariable "COScomplete";publicvariable "COS_distance";
+COScomplete=false;
+publicvariable "COScomplete";
+publicvariable "COS_distance";
+
 populating_COS=false;
 cosMkrArray=[];
 server setvariable ["cosGrpCount",0];//Set global group count
@@ -41,6 +44,11 @@ _slack=2;// Additional spawn points
 
 {
 // Organise towns and markers
+_name = text _x;// Get name
+_sizeX = getNumber (configFile >> "CfgWorlds" >> worldName >> "Names" >> (text _x) >> "radiusA");
+_sizeY = getNumber (configFile >> "CfgWorlds" >> worldName >> "Names" >> (text _x) >> "radiusB");
+_pos= getpos _x;
+
 if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else
 	{
 
