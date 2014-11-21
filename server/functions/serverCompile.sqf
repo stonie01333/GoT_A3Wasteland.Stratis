@@ -24,6 +24,7 @@ createMissionMarker = [_path, "createMissionMarker.sqf"] call mf_compile;
 createMissionVehicle = [_path, "createMissionVehicle.sqf"] call mf_compile;
 createMissionVehicle2 = [_path, "createMissionVehicle2.sqf"] call mf_compile;
 createOutpost = [_path, "createOutpost.sqf"] call mf_compile;
+moveIntoBuildings = [_path, "moveIntoBuildings.sqf"] call mf_compile;
 createRandomSoldier = [_path, "createUnits\createRandomSoldier.sqf"] call mf_compile;
 createRandomSoldierC = [_path, "createUnits\createRandomSoldierC.sqf"] call mf_compile;
 createSmallDivers = [_path, "createUnits\smallDivers.sqf"] call mf_compile;
