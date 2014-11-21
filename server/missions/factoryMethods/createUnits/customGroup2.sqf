@@ -15,13 +15,15 @@ _radius = [_this, 3, 10, [0]] call BIS_fnc_param;
 
 _unitTypes =
 [
-	"C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_hunter_1_F","C_man_p_beggar_F","C_man_p_beggar_F_afro",
-	"C_man_p_fugitive_F","C_man_p_shorts_1_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F",
-	"C_man_polo_5_F","C_man_polo_6_F","C_man_shorts_1_F","C_man_shorts_2_F","C_man_shorts_3_F","C_man_shorts_4_F",
-	"C_man_w_worker_F","C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_hunter_1_F","C_man_p_beggar_F",
-	"C_man_p_beggar_F_afro","C_man_p_fugitive_F","C_man_p_shorts_1_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F",
-	"C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F","C_man_shorts_1_F","C_man_shorts_2_F","C_man_shorts_3_F",
-	"C_man_shorts_4_F","C_man_w_worker_F"
+	"C_man_hunter_1_F","C_man_p_beggar_F","C_man_p_beggar_F_afro",
+	"C_man_p_fugitive_F","C_man_p_shorts_1_F","C_man_polo_1_F",
+	"C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F",
+	"C_man_p_beggar_F","C_man_p_beggar_F_afro",
+	"C_man_p_fugitive_F","C_journalist_F","C_Orestes",
+	"C_man_polo_5_F","C_man_polo_6_F","C_man_shorts_1_F",
+	"C_man_shorts_2_F","C_man_shorts_3_F","C_man_shorts_4_F",
+	"C_man_w_worker_F","C_man_p_beggar_F","C_man_p_beggar_F_afro",
+	"C_man_p_fugitive_F"
 ];
 
 for "_i" from 1 to _nbUnits do
@@ -32,12 +34,8 @@ for "_i" from 1 to _nbUnits do
 
 	removeAllWeapons _unit;
 	removeAllAssignedItems _unit;
-	// removeUniform _unit;
 	removeVest _unit;
 	removeBackpack _unit;
-	//removeHeadgear _unit;
-	//removeGoggles _unit;
-
 	_unit addVest "V_HarnessOSpec_gry";
 	_unit addMagazine "30Rnd_556x45_Stanag";
 	_unit addMagazine "30Rnd_556x45_Stanag";
@@ -48,7 +46,6 @@ for "_i" from 1 to _nbUnits do
 		// Grenadier every 3 units
 		case (_i % 3 == 0):
 		{
-			//_unit addUniform "U_B_CombatUniform_mcam_vest";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addWeapon "arifle_TRG21_GL_F";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
@@ -57,7 +54,6 @@ for "_i" from 1 to _nbUnits do
 		// RPG every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			//_unit addUniform "U_B_CombatUniform_mcam_tshirt";
 			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addWeapon "arifle_TRG20_F";
 			_unit addMagazine "Titan_AT";
@@ -68,8 +64,6 @@ for "_i" from 1 to _nbUnits do
 		// Rifleman
 		default
 		{
-			//_unit addUniform "U_B_CombatUniform_mcam";
-
 			if (_unit == leader _group) then
 			{
 				_unit addWeapon "arifle_TRG21_F";
@@ -82,19 +76,11 @@ for "_i" from 1 to _nbUnits do
 		};
 	};
 
-	if (random 1 < 0.8) then    							// 80% chance unit has no NVG but flashlight
-	{
-		_unit addPrimaryWeaponItem "acc_flashlight";
-		_unit unassignItem "NVGoggles";					// unassign and remove NVG if they have them
-		_unit removeItem "NVGoggles";
-		_unit enablegunlights "forceOn";					//set to "forceOn" to force use of lights (during day too default = AUTO)
-	};
+_unit addPrimaryWeaponItem "acc_flashlight";
+_unit enablegunlights "forceOn";					//set to "forceOn" to force use of lights (during day too default = AUTO)
 	
 	_unit addRating 1e11;
-	//_unit spawn addMilCap;
 	_unit spawn refillPrimaryAmmo;
 	_unit call setMissionSkill;
 	_unit addEventHandler ["Killed", server_playerDied];
 };
-
-//[_group, _pos] call defendArea;
