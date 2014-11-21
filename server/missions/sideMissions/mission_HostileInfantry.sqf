@@ -11,7 +11,7 @@ if (!isServer) exitwith {};
 
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly"];
+private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1"];
 
 _setupVars =
 {
@@ -24,14 +24,14 @@ _setupVars =
 	_buildingRadius = _locArray select 1;
 	_townName = _locArray select 2;
 
-	//randomize ammount of units
+	//randomize amount of units
 	_nbUnits = _nbUnits + round(random (_nbUnits*0.5));	
 	// reduce radius for larger towns. for example to avoid endless hide and seek in kavala ;) 
 	_buildingRadius = if (_buildingRadius > 201) then {(_buildingRadius*0.5)} else {_buildingRadius};	
 	// 25% change on AI not going on rooftops
-	if (random 1 < 0.75) { _putOnRoof = true } else { _putOnRoof = false };
+	if (random 1 < 0.75) then { _putOnRoof = true } else { _putOnRoof = false };
 	// 25% chance on AI trying to fit into a single building instead of spreading out
-	if (random 1 < 0.75) { _fillEvenly = true } else { _fillEvenly = false };
+	if (random 1 < 0.75) then { _fillEvenly = true } else { _fillEvenly = false };
 };
 
 _setupObjects =
