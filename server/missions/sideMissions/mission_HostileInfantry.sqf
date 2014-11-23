@@ -52,7 +52,7 @@ _setupObjects =
 	_chair1 setDir random 90;
 	_chair2 = createVehicle ["Land_CampingChair_V2_F", _missionPos, [], 2, "None"];
 	_chair2 setDir random 180;
-	_cFire1	= createVehicle ["Campfire_burning_F ", _missionPos, [], 2, "None"];
+	_cFire1	= createVehicle ["Campfire_burning_F", _missionPos, [], 2, "None"];
 	
 	
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
