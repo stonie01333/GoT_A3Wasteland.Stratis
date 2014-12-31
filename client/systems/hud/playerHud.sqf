@@ -138,6 +138,7 @@ while {true} do
 	} else {
 		format ["%1 <img size='0.7' image='client\icons\running_man.paa'/>", 100 - ceil((getFatigue player) * 100)];
 	};
+	_str = _str + format ["<br/>%1 <img size='0.7' image='client\icons\bounty.paa'/>", [player getVariable ["cbounty", 0]] call fn_numbersText];
 	_str = _str + format ["<br/>%1 <img size='0.7' image='client\icons\money.paa'/>", [player getVariable ["cmoney", 0]] call fn_numbersText];
 	_str = _str + format ["<br/>%1 <img size='0.7' image='client\icons\water.paa'/>", ceil (thirstLevel max 0)];
 	_str = _str + format ["<br/>%1 <img size='0.7' image='client\icons\food.paa'/>", ceil (hungerLevel max 0)];
@@ -152,7 +153,7 @@ while {true} do
 
 	if (isStreamFriendlyUIEnabled) then
 	{
-		_tempString = format ["<t color='#A0FFFFFF'>A3Wasteland %1<br/>www.a3wasteland.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
+		_tempString = format ["<t color='#A0FFFFFF'>GoT A3Wasteland %1<br/>www.a3wasteland.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
 		_yOffset = 0.28;
 
 		_hudVehicle ctrlSetStructuredText parseText _tempString;
