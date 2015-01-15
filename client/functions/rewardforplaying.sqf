@@ -1,3 +1,5 @@
+//	@file Name: rewardforplaying.sqf
+//	@file Author: JoSchaap
 multiPlyWith = 1;
 _i=0;
 while {_i < 3} do
