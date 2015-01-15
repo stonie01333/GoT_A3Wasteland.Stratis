@@ -32,6 +32,11 @@ FAR_HandleDamage_EH = "addons\far_revive\FAR_HandleDamage_EH.sqf" call mf_compil
 FAR_Player_Unconscious = "addons\far_revive\FAR_Player_Unconscious.sqf" call mf_compile;
 
 ////////////////////////////////////////////////
+// Suspect Tracking
+////////////////////////////////////////////////
+//FAR_setKillerInfo = "addons\far_revive\FAR_setKillerInfo.sqf" call mf_compile; // done from globalCompile.sqf instead, due to use by server
+
+////////////////////////////////////////////////
 // Revive Player
 ////////////////////////////////////////////////
 FAR_HandleRevive =
@@ -293,7 +298,7 @@ FAR_CheckFriendlies =
 	private ["_units", "_msg", "_medics", "_medicsText", "_dir", "_cardinal"];
 
 	_units = player nearEntities ["AllVehicles", 1000];
-	_msg = "<t underline='true'>Nearby medics</t>"; // Non-breaking space (Alt+255) between "nearby" and "medics", otherwise the underline is split between the 2 words
+	_msg = "<t underline='true'>Nearby medics</t>"; // Non-breaking space (Alt+255) between "nearby" and "medics", otherwise the underline is split between the 2 words
 	_medics = [];
 	_medicsText = "";
 
